@@ -62,8 +62,6 @@ public class ConsumerLagPublisher {
 	@SneakyThrows
 	@Scheduled(fixedRate = 10, timeUnit = TimeUnit.SECONDS)
 	public void pushConsumerGroupLag() {
-
-
 		int port = Integer.parseInt(PORT);
 		StatsDClient statsDClient = new NonBlockingStatsDClient(PREFIX, HOSTNAME, port);
 
