@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Consumer Lag Crossed Threshold</title>
+	<style>
+		table, tbody, td, tr {
+			border: black 1px solid;
+			border-collapse: collapse;
+		}
+
+		td {
+			padding: 6px;
+		}
+	</style>
+</head>
+<body>
+<table>
+	<tbody>
+	<tr>
+		<td>TimeStamp</td>
+		<td>${timestamp}</td>
+	</tr>
+	<tr>
+		<td>Consumer Group</td>
+		<td>${consumer_group}</td>
+	</tr>
+	<tr>
+		<td>Current Lag</td>
+		<td>${current_lag}</td>
+	</tr>
+	<tr>
+		<td>Acceptable Lag</td>
+		<td>${acceptable_lag}</td>
+	</tr>
+	</tbody>
+</table>
+
+</body>
+</html>
